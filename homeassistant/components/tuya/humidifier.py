@@ -32,14 +32,6 @@ class TuyaHumidifierEntityDescription(HumidifierEntityDescription):
 
 
 HUMIDIFIERS: dict[str, TuyaHumidifierEntityDescription] = {
-    # Dehumidifier
-    # https://developer.tuya.com/en/docs/iot/categorycs?id=Kaiuz1vcz4dha
-    "cs": TuyaHumidifierEntityDescription(
-        key=DPCode.SWITCH,
-        dpcode=(DPCode.SWITCH, DPCode.SWITCH_SPRAY),
-        humidity=DPCode.DEHUMIDITY_SET_VALUE,
-        device_class=HumidifierDeviceClass.DEHUMIDIFIER,
-    ),
     # Humidifier
     # https://developer.tuya.com/en/docs/iot/categoryjsq?id=Kaiuz1smr440b
     "jsq": TuyaHumidifierEntityDescription(
